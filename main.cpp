@@ -1,19 +1,19 @@
 #include <iostream>
-
 using namespace std;
-class complex{
-public:
-	string name;
-	void print(){
-	cout<<name<<endl;
-	}
-};
-int main()
+int main ()
 {
-	complex com;
-	com.name="tilksew";
-	com.print();
+    char comands[100];
+    system("git status");
+    cin.getline(comands, 100);
 
-    cout  << endl;
+    string str = comands;
+
+    const char *command = str.c_str();
+
+    system(command);
+
+    cout << "\nRunning file ";
+
+
     return 0;
 }
