@@ -2,13 +2,11 @@
 using namespace std;
 int main ()
 {
-    char comands[100];
+    string comands;
     system("git status");
-    cin.getline(comands, 100);
+    getline(cin,comands);
 
-    string str = comands;
-
-    const char *command = str.c_str();
+    const char *command = comands.c_str();
 
     system(command);
 
